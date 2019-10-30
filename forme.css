@@ -1,0 +1,27 @@
+form{
+    border: 5px solid;
+    padding:10px;
+}
+input{
+    padding: 10px 10px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+}
+.remarks{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+input[type=submit]{
+    box-align:right;
+    width: 15%;
+}
+input[type=reset]{
+    box-align:right;
+    width: 15%;
+}

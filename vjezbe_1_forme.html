@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="forme.css">
+    <title>Forme</title>
+</head>
+<body<>
+    <!-- whole form gets sent to action_page.php, then it does the method "get" which sends form data via a URL string or "post" which sends form data via the server -->
+    <form action="\action_page.php" method="get">
+        <h3>Testform</h3>
+        <!-- input type can be text, password, radio button, select option list(dropdown menu), check box, submit sends data, reset clears the form data -->
+        Name:<input type="text" name="firstname"><br>
+        Password:<input type="password" name="password"><br>
+        Gender:<input type="radio" name="gender" value="Male" checked="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        Continent:<select name="continent">
+            <option value="north america">North America</option>
+            <option value="south america">South America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+            <option value="antarctica">Antarctica</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br>
+        Meals:<input type="checkbox" name="breakfast" value="breakfast">Breakfast<br>
+        <input type="checkbox" name="breakfast" value="lunch">Lunch<br>
+        <input type="checkbox" name="breakfast" value="dinner">Dinner<br>
+        Remarks:<input type="textarea" class = "remarks" name="remarks"><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Cancel">
+    </form>
+    </body>
+
+</html>
