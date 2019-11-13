@@ -1,0 +1,21 @@
+.col-md-5{
+    margin:100px;
+    margin-left: 150px;
+}
+.col-md-2 {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    color:orange;
+    background-color:orange; 
+    padding-top: 40vh;
+  }
+.col-md-2 a{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    float: left;
+}
