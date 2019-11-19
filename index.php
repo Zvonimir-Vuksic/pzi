@@ -18,7 +18,26 @@
 	</head>
 
 	<body>
-		
+		<?php
+			// spajanje na bazu podataka
+			$servername = "localhost";
+			$username = "root";
+			$password = "";
+			
+			// try catch u slucaju errora
+			try {
+				$konekcija = new PDO("mysql:host=$servername;dbname=pzi", $username, $password);
+				$konekcija->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				echo "Connected successfully";
+				}
+			catch(PDOException $e)
+				{
+				echo "Connection failed: " . $e->getMessage();
+				}
+
+				//update korisnika sa id 3 na tip administator
+				$sql = "UPDATE `korisnik` SET `TIP` = \'Administrator\' WHERE `korisnik`.`ID` = 3";
+		?>
 		<div class="container">
 		
 			<div class = "row mt-5">
