@@ -32,6 +32,7 @@
 				}
 			catch(PDOException $e)
 				{
+				$konekcija=NULL;
 				echo "Connection failed: " . $e->getMessage();
 				}
 
